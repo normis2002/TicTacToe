@@ -22,6 +22,11 @@ function start(cells) {
                 cells[comb[1]].textContent == cells[comb[2]].textContent &&
                 cells[comb[0]].textContent != ''
             ) {
+
+                cells[comb[0]].classList.add('backlight');
+                cells[comb[1]].classList.add('backlight');
+                cells[comb[2]].classList.add('backlight');
+
                 return cellsNow;
             }
         }
@@ -31,10 +36,10 @@ function start(cells) {
     function areAllCellsFilled(cells) {
         for (let cell of cells) {
             if (!cell.textContent) {
-                return false; // Принаймні одна комірка не заповнена
+                return false;
             }
         }
-        return true; // Всі комірки заповнені
+        return true; 
     }
 
     for (let cell of cells) {
@@ -53,6 +58,7 @@ function start(cells) {
 
             if (winner) {
                 console.log(`Winner: ${winner}`);
+
             } else if (areAllCellsFilled(cells)) {
                 console.log("It's a draw!");
             }

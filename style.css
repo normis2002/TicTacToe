@@ -20,6 +20,9 @@ body {
 	font-weight: bold;
     cursor: pointer;
 }
-#area td:hover {
+#area td:not(.backlight):hover {
     background-color: rgb(233, 233, 233);
+}
+.backlight{
+    background-color: greenyellow;
 }
