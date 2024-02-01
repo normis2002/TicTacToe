@@ -26,3 +26,21 @@ body {
 .backlight{
     background-color: greenyellow;
 }
+button{
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    margin-top: 15px;
+}
+#demo{
+    display: block;
+    width: 168px;
+    height: 70px;
+    border: 2px solid rgb(37, 33, 33);;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}   
